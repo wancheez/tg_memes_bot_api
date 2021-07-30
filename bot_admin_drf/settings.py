@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-x0n$p2nr3!e*(vee785&yw87qd-ye%eh$wxena!#27*(9=wk&v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wancheezbot-api.herokuapp.com']
 
 
 # Application definition
