@@ -137,4 +137,4 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
-django_heroku.settings(staticfiles=True)
+django_heroku.settings(locals())
