@@ -1,0 +1,130 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<section class="section summary-section">
+    <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+    <div class="summary">
+        {% load static %}
+        <p>A Python developer with 6 years of experience in IT. Broad expertise in microservices, web backend and databases. You can <a href="{% static 'pdf/cv.pdf' %}" >download this resume here</a>. </p>
+    </div><!--//summary-->
+</section><!--//section-->
+
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">Middle Python Developer</h3>
+                <div class="time">2021 - Present</div>
+            </div><!--//upper-row-->
+            <div class="company">Ctrl2Go Solutions</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Developing, design and implementation of various microservices for locomotive monitoring and maintenance system.</p>
+            <p>Loose coupling services with Apache Kafka, No-sql and SQL DBs, Fast API and others. </p>
+        </div><!--//details-->
+    </div><!--//item-->
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">Middle Python developer</h3>
+                <div class="time">2019 - 2021</div>
+            </div><!--//upper-row-->
+            <div class="company">Nexign</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Developing inhouse products.</p>
+            <p>Design and implementation of testing tools for tarification system with various telecom protocols such as DIAMETER. Developing Slack bot for tasks control purposes.</p>
+        </div><!--//details-->
+    </div><!--//item-->
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">Integration engineer</h3>
+                <div class="time">2017 - 2019</div>
+            </div><!--//upper-row-->
+            <div class="company">Nexign</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Integration of telecom system. Network monetization services. Configuration, support, custom development. Working with foreign customers.</p>
+        </div><!--//details-->
+    </div><!--//item-->
+
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">Support engineer</h3>
+                <div class="time">2015 - 2017</div>
+            </div><!--//upper-row-->
+            <div class="company">Peter-Service</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>Support of telecom systems. 3-rd support line. Mentoring new colleagues. Working with source code.</p>
+        </div><!--//details-->
+    </div><!--//item-->
+
+</section><!--//section-->
+
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-archive"></i>Private projects</h2>
+    <div class="intro">
+        <p>Development is also my hobby. Here some of my pet projects.</p>
+    </div><!--//intro-->
+    <div class="item">
+        <span class="project-title"><a href="https://github.com/wancheez/tg_memes_bot">TG Memes bot</a></span> - <span class="project-tagline">Bot for Telegram messenger with various functions. The main feature is memes posting scheduling. Pictures comes from Reddit.</span>
+
+    </div><!--//item-->
+    <div class="item">
+        <span class="project-title"><a href="https://github.com/wancheez/tg_memes_bot_api" target="_blank">TG Memes API</a></span> -
+        <span class="project-tagline">REST API for TG Memes bot. Allows to configure bot scheduling via HTTP request and visual interface. Using DRF.</span>
+    </div><!--//item-->
+    <div class="item">
+        <span class="project-title"><a href="https://github.com/wancheez/VKAggregator" target="_blank">VK Social Graphs</a></span> - <span class="project-tagline">My master dissertation project. Aggregation system for russian social network VK. Building social graphs from users network with Orient DB. Analising graph with different math methods. Language is C#, UI - .NET WPF </span>
+    </div><!--//item-->
+    <div class="item">
+        <span class="project-title"><a href="https://github.com/wancheez/VKMUSIC" target="_blank">VK Music</a></span> - <span class="project-tagline">Desktop music player for vk.com</span>
+    </div><!--//item-->
+</section><!--//section-->
+
+<section class="skills-section section">
+    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+    <div class="skillset">
+        <div class="column-stack">
+            <ul>
+                <li class="column-header">Python Development</li>
+                <li>Python 3</li>
+                <li>Django</li>
+                <li>FastAPI</li>
+            </ul>
+            <ul>
+                <li class="column-header">Databases</li>
+                <li>Oracle</li>
+                <li>PostgreSQL</li>
+                <li>PL/SQL</li>
+                <li>Clickhouse</li>
+                <li>Redis</li>
+            </ul>
+            <ul>
+                <li class="column-header">Brokers</li>
+                <li>Apache Kafka</li>
+                <li>RabbitMQ</li>
+            </ul>
+            <ul>
+                <li class="column-header">DevOPS</li>
+                <li>Docker (Compose)</li>
+                <li>Kubernetes</li>
+                <li>Gitlab CI</li>
+                <li>Teamcity</li>
+            </ul>
+            <ul>
+                <li class="column-header">Other</li>
+                <li>SOLID</li>
+                <li>OOP</li>
+            </ul>
+        </div>
+    </div>
+</section><!--//skills-section-->
+{% endblock %}

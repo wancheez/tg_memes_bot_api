@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'meme_schedules',
+    'resume',
     'rest_framework.authtoken',
 ]
 
@@ -79,13 +80,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': os.environ['TG_DB_NAME'],
+        'NAME': 'postgres',
 
-        'USER': os.environ['TG_DB_USERNAME'],
+        'USER': 'postgres',
 
-        'PASSWORD': os.environ['TG_DB_PASSWORD'],
+        'PASSWORD': 'Jumper300',
 
-        'HOST': os.environ['TG_DB_HOST'],
+        'HOST': 'localhost',
 
         'PORT': '5432',
     }
@@ -114,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
