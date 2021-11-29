@@ -14,6 +14,7 @@ class ScheduleTask(models.Model):
     chat_title = models.CharField(null=True, max_length=255)
     created = models.DateTimeField(default=datetime.datetime.min)
     creator = models.CharField(null=True, max_length=255)
+    subreddit = models.CharField(null=True, max_length=255)
 
     def __str__(self):
         return f'Chat: {self.chat_id}'
