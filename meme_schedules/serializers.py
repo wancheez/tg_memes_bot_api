@@ -6,7 +6,7 @@ from .models import ScheduleTask, TaskType
 class ScheduleTaskSerializer(serializers.ModelSerializer):
     class Meta:
         model = ScheduleTask
-        fields = ('id', 'task_type', 'chat_id', 'chat_title', 'created', 'creator')
+        fields = ('id', 'task_type', 'chat_id', 'chat_title', 'created', 'creator', 'subreddit')
 
 
 class TaskTypeSerializer(serializers.ModelSerializer):
